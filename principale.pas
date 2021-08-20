@@ -1,3 +1,13 @@
+{*******************************************************}
+{                                                       }
+{       alnews                                          }
+{                                                       }
+{       Copyright (C) 2021 Aloe Luigi                   }
+{                                                       }
+{*******************************************************}
+
+
+
 unit principale;
 
 interface
@@ -102,7 +112,6 @@ begin
   parole := TArray<string>.Create('Covid', 'Green Pass', 'Coronavirus',
     'ricoveri', 'contagi', 'positivi', 'Vaccino', 'virologo', 'green pass',
     'vaccinarsi', 'vaccina', 'vaccini', 'Vaccini', 'Green pass');
-//    wb1.BrowserExecutableFolder:='WebView2Loader_x64.dll';
 end;
 
 procedure TForm1.ItaliaClick(Sender: TObject);
