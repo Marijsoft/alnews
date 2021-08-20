@@ -150,7 +150,6 @@ begin
   try
     RESTRequest1.Execute;
   finally
-    FDMemTable1.DisableControls;
     ListBox1.Items.Clear;
     FDMemTable1.First;
     with FDMemTable1 do
