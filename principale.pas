@@ -22,7 +22,8 @@ uses
   FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
   FireDAC.Phys.Intf, FireDAC.DApt.Intf, REST.Types, REST.Client,
   Data.Bind.Components, Data.Bind.ObjectScope, REST.Response.Adapter, Data.DB,
-  FireDAC.Comp.DataSet, FireDAC.Comp.Client, Langji.Wke.Webbrowser;
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, Langji.Wke.Webbrowser,
+  Vcl.ShareContract;
 
 type
   TForm1 = class(TForm)
@@ -52,6 +53,7 @@ type
     ListBox1: TListBox;
     VirtualImage1: TVirtualImage;
     wb1: TWkeWebBrowser;
+    SharingContract1: TSharingContract;
     procedure MenuVirtualImageClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure ListBox1Click(Sender: TObject);
@@ -192,7 +194,13 @@ end;
 
 procedure TForm1.VirtualImage1Click(Sender: TObject);
 begin
-  CardPanel1.ActiveCard := Card1;
+SharingContract1.DataTitle:='AL News:leggi questa notizia';
+SharingContract1.Description:='Condividi la notizia';
+SharingContract1.Description:=FDMemTable1.FieldByName('Title').AsString;
+//SharingContract1.RtfText:='Leggi questa notizia:';
+SharingContract1.WebAddress:=FDMemTable1.FieldByName('url').Value;
+SharingContract1.HTML:='<a href="https://github.com/Marijsoft/alnews">Lettore news alternativo</a>';
+SharingContract1.InitSharing;
 end;
 
 end.
