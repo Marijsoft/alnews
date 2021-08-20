@@ -1,0 +1,11 @@
+const
+urlrss='https://feed2json.org/convert?url=';
+notizie='https://news.google.com/news/rss/?hl=IT';
+M='https://news.google.com/rss/headlines/section/topic/WORLD/?hl=IT&ceid=IT:it';
+It='https://news.google.com/rss/headlines/section/topic/NATION/?hl=IT&ceid=IT:it';
+Tec='https://news.google.com/rss/headlines/section/topic/TECHNOLOGY/?hl=IT&ceid=IT:it';
+Sci='https://news.google.com/rss/headlines/section/topic/SCIENCE/?hl=IT&ceid=IT:it';
+Sp='https://news.google.com/rss/headlines/section/topic/SPORTS/?hl=IT&ceid=IT:it';
+Sal='https://news.google.com/rss/headlines/section/topic/HEALTH/?hl=IT&ceid=IT:it';
+Af='https://news.google.com/rss/headlines/section/topic/BUSINESS/?hl=IT&ceid=IT:it';
+Divert='https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT/hl=IT&ceid=IT:it';
