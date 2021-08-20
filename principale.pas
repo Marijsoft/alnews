@@ -138,7 +138,7 @@ end;
 
 procedure TForm1.RESTRequest1HTTPProtocolError(Sender: TCustomRESTRequest);
 begin
-if (Sender.Response.StatusText='500') or (Sender.Response.StatusText='400')
+if (Sender.Response.StatusText='500') or (Sender.Response.StatusText='404')
 then
 ShowMessage('Errore lato server');
 end;
